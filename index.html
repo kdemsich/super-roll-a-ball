@@ -3,25 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Brian Demsich's Super Roll a Ball</title>
+    <title>Unity WebGL Player | Roll a Ball</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   </head>
-  <body style="font-family: 'Montserrat', sans-serif;">
+  <body>
     <div id="unity-container" class="unity-desktop">
-      <h1 style="color: #172835;">Welcome to Brian's Super Roll a Ball!</h1>
-      <details>
-        <summary><strong>Controls</strong></summary>
-        <p>Use W,A,S,D or the arrow keys to move the player.</p>
-        <p>Use the space bar to make the player jump.</p>
-      </details>
-      <details>
-        <summary><strong>Objective</strong></summary>
-        <p>Collect all gems in the shortest time possible.</p>
-        <p>Avoid touching walls or falling off the stage.</p>
-      </details>
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -40,11 +27,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BuildLessTextures.loader.js";
+      var loaderUrl = buildUrl + "/SuperRollABallBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/BuildLessTextures.data.gz",
-        frameworkUrl: buildUrl + "/BuildLessTextures.framework.js.gz",
-        codeUrl: buildUrl + "/BuildLessTextures.wasm.gz",
+        dataUrl: buildUrl + "/SuperRollABallBuild.data.gz",
+        frameworkUrl: buildUrl + "/SuperRollABallBuild.framework.js.gz",
+        codeUrl: buildUrl + "/SuperRollABallBuild.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Roll a Ball",
@@ -96,13 +83,5 @@
       };
       document.body.appendChild(script);
     </script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.5.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
   </body>
 </html>
